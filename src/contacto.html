@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Contacto - L10</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex flex-col fixed w-full border-b-2 border-[#E8B34B]">
+      <div
+        class="bg-[#E8B34B] text-black font-bold flex justify-center gap-4 p-2 text-sm"
+      >
+        <p>¿Te gustaría conocer a Messi? Estamos sorteando un Meet & Greet!</p>
+        <a
+          href="https://joacomesa22.github.io/meet-and-greet/"
+          target="_blank"
+          class="underline"
+          >Participar</a
+        >
+      </div>
+      <div class="flex justify-between items-center py-6 px-14 bg-black">
+        <div class="max-w-[80px]">
+          <a href="./index.html">
+            <img src="../dist/img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <nav>
+          <ul class="flex gap-10">
+            <li><a href="./sobreleo.html" class="font-medium">Sobre Leo</a></li>
+            <li>
+              <a href="./novedades.html" class="font-medium">Novedades</a>
+            </li>
+            <li><a href="./galeria.html" class="font-medium">Galería</a></li>
+            <li><a href="./contacto.html" class="font-medium">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Form -->
+    <section>
+      <div>
+        <div>
+          <h1>Contacto</h1>
+          <p>
+            Cualquier duda o consulta que quieras hacernos, podes hacerla a
+            través de este formulario
+          </p>
+        </div>
+        <form action="#">
+          <div>
+            <label for="nombre">
+              <span>Nombre</span>
+              <input type="text" name="nombre" id="nombre" />
+            </label>
+            <label for="apellido">
+              <span>Apellido</span>
+              <input type="text" name="apellido" id="apellido" />
+            </label>
+          </div>
+          <label for="email">
+            <span>Email</span>
+            <input type="email" name="email" id="email" />
+          </label>
+
+          <label for="mensaje">
+            <span>Mensaje</span>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <img src="#" alt="logo" />
+      </div>
+      <div>
+        <a href="https://www.instagram.com/"><i>IG</i></a>
+        <a href="https://twitter.com/home"><i>TW</i></a>
+        <a href="https://www.tiktok.com/es/"><i>TKTK</i></a>
+      </div>
+      <a href="#">Curriculum</a>
+    </footer>
+  </body>
+</html>

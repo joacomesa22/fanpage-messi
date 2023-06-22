@@ -15,7 +15,7 @@
 
 .cardsgrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .lg-next::before {
@@ -33,4 +33,42 @@
 .lg-zoom-in,
 .lg-toolbar .lg-download {
     display: none;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: flex;
+    animation: 10s slide infinite linear;
+}
+
+.contactobg {
+    background-image: url(../dist/img/topo.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.w-links {
+    width: max-content;
 }

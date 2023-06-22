@@ -23,7 +23,7 @@
     <!-- Header -->
     <header class="flex flex-col fixed w-full border-b-2 border-[#E8B34B]">
       <div
-        class="bg-[#E8B34B] text-black font-bold flex justify-center gap-4 p-2 text-sm"
+        class="bg-[#E8B34B] text-black font-bold flex justify-center gap-4 p-2 text-sm flex-wrap text-center"
       >
         <p>¿Te gustaría conocer a Messi? Estamos sorteando un Meet & Greet!</p>
         <a
@@ -33,27 +33,79 @@
           >Participar</a
         >
       </div>
-      <div class="flex justify-between items-center py-6 px-14 bg-black">
-        <div class="max-w-[80px]">
-          <a href="./index.html">
-            <img src="./dist/img/logo.png" alt="logo" />
-          </a>
+      <nav class="border-gray-200 bg-black">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div class="max-w-[80px] hover:scale-110 duration-300">
+            <a href="./index.html">
+              <img src="./dist/img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:border-black"
+            >
+              <li>
+                <a
+                  href="./sobreleo.html"
+                  class="block py-2 pl-3 pr-4 text-white md:p-0 dark:text-white hover:text-[#E8B43B] hover:scale-105 duration-300"
+                  >Sobre Leo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./novedades.html"
+                  class="block py-2 pl-3 pr-4 text-white md:p-0 dark:text-white hover:text-[#E8B43B] hover:scale-105 duration-300"
+                  >Novedades</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./galeria.html"
+                  class="block py-2 pl-3 pr-4 text-white md:p-0 dark:text-white hover:text-[#E8B43B] hover:scale-105 duration-300"
+                  >Galería</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contacto.html"
+                  class="block py-2 pl-3 pr-4 text-white md:p-0 dark:text-white hover:text-[#E8B43B] hover:scale-105 duration-300"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav>
-          <ul class="flex gap-10">
-            <li><a href="./sobreleo.html" class="font-medium">Sobre Leo</a></li>
-            <li>
-              <a href="./novedades.html" class="font-medium">Novedades</a>
-            </li>
-            <li><a href="./galeria.html" class="font-medium">Galería</a></li>
-            <li><a href="./contacto.html" class="font-medium">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
-    <main class="pt-[143px]">
+    <main class="pt-[182px] md:pt-[143px]">
       <!-- Hero -->
-      <section class="flex justify-center items-center p-14 gap-24">
+      <section
+        class="flex justify-center items-center p-8 lg:p-14 md:gap-12 gap-8 flex-wrap md:flex-nowrap"
+      >
         <div class="flex flex-col gap-4 items-start">
           <h1 class="text-5xl font-bold">El camino a la gloria</h1>
           <p class="max-w-[500px]">
@@ -72,7 +124,7 @@
       </section>
 
       <!-- Historia -->
-      <section class="flex flex-col gap-10 p-14">
+      <section class="flex flex-col gap-10 lg:p-14 p-8">
         <h2 class="text-4xl font-bold">Sobre Lionel...</h2>
         <div class="flex flex-col gap-10 max-w-[800px]">
           <p>
@@ -215,26 +267,37 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="px-14 py-6 bg-[#E8B34B] flex justify-between items-center">
-      <div class="max-w-[80px]">
+    <footer
+      class="lg:px-14 lg:py-6 p-4 bg-[#E8B34B] flex justify-center items-center md:justify-between flex-wrap gap-10"
+    >
+      <div class="max-w-[80px] hover:scale-110 duration-300">
         <a href="./index.html">
           <img src="./dist/img/logo-negro.png" alt="logo" />
         </a>
       </div>
       <div class="flex gap-4">
         <a href="https://www.instagram.com/"
-          ><img src="./dist/img/instagram.svg" alt="social"
+          ><img
+            src="./dist/img/instagram.svg"
+            alt="social"
+            class="hover:-translate-y-2 duration-300"
         /></a>
         <a href="https://twitter.com/home"
-          ><img src="./dist/img/twitter.svg" alt="social"
+          ><img
+            src="./dist/img/twitter.svg"
+            alt="social"
+            class="hover:-translate-y-2 duration-300"
         /></a>
         <a href="https://www.tiktok.com/es/"
-          ><img src="./dist/img/tiktok.svg" alt="social"
+          ><img
+            src="./dist/img/tiktok.svg"
+            alt="social"
+            class="hover:-translate-y-2 duration-300"
         /></a>
       </div>
       <a
         href="https://joacomesa22.github.io/cv-messi/"
-        class="text-black underline font-bold text-xl"
+        class="text-black font-bold text-xl p-2 hover:bg-black hover:text-[#E8B34B] duration-300 rounded-md"
         target="_blank"
         >Curriculum</a
       >

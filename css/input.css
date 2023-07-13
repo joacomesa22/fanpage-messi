@@ -5,7 +5,6 @@
 .herobg {
     background-image: url(../dist/img/hero.jpg);
     background-size: cover;
-    background-position: center;
     height: calc(100vh - 143px);
 }
 
@@ -64,9 +63,9 @@
 }
 
 .contactobg {
-    background-image: url(../dist/img/topo.jpg);
+    background-image: url(../dist/img/banda.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center 25%;
 }
 
 .w-links {
